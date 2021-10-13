@@ -1,11 +1,11 @@
 import React from "react";
 
 import ProductItem from "../components/Products/ProductItem";
-import { useStore } from "../store/products-store";
+import { store } from "../store/products-store";
 import "./Products.css";
 
 const Products = (props) => {
-  const state = useStore()[0];
+  const state = store.getState();
 
   return (
     <ul className="products-list">
