@@ -1,6 +1,6 @@
 import { createStore } from "./react-space-state";
 
-const [useStore, initStore] = createStore();
+export const store = createStore();
 
 export const configureProductStore = () => {
   const actions = {
@@ -15,7 +15,7 @@ export const configureProductStore = () => {
       return { products: updatedProducts };
     }
   };
-  initStore(actions, {
+  store.initStore(actions, {
     products: [
       {
         id: "p1",
@@ -44,5 +44,3 @@ export const configureProductStore = () => {
     ]
   });
 };
-export { useStore };
-// export { useStore as useProductStore };
