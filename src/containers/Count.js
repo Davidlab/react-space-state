@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import { useStore } from "../store/counter-store";
+import { store } from "../store/counter-store";
 import "./Counter.css";
 const Count = (props) => {
-  const state = useStore()[0];
+  const state = store.getState();
 
   useEffect(() => {
     // console.log("count.js");
