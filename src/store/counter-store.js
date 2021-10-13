@@ -1,6 +1,6 @@
 import { createStore } from "./react-space-state";
 
-const [useStore, initStore] = createStore();
+export const store = createStore();
 
 export const configureCounterStore = () => {
   const actions = {
@@ -8,8 +8,5 @@ export const configureCounterStore = () => {
     SUB: (state, amount) => ({ counter: state.counter - amount })
   };
 
-  initStore(actions, { counter: 0 });
+  store.initStore(actions, { counter: 0 });
 };
-
-// export { useStore as useCounterStore };
-export { useStore };
