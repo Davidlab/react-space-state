@@ -1,11 +1,11 @@
 import React from "react";
 
 import Card from "../UI/Card";
-import { useStore } from "../../store/products-store";
+import { store } from "../../store/products-store";
 import "./ProductItem.css";
 
 const ProductItem = React.memo((props) => {
-  const dispatch = useStore(false)[1];
+  const dispatch = store.useDispatch();
 
   const toggleFavHandler = () => {
     // toggleFav(props.id);
