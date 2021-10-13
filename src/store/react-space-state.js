@@ -1,5 +1,6 @@
 //React Space State vs 0.1 - React state management (redux replacement)
-https://github.com/Davidlab/react-space-state.git
+//https://github.com/Davidlab/react-space-state.git
+//https://codesandbox.io/s/react-space-state-final-vs-0-1-rd872
 /* eslint-disable */
 
 //React Space State vs 0.1 - React state management (redux replacement)
